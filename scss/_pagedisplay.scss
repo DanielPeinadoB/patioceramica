@@ -1,0 +1,50 @@
+.displaysection {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.displaytarjeta {
+    text-align: center;
+}
+
+.displaysection .titlemid {
+    text-align: center;    
+    padding-bottom: 2rem;
+}
+
+.displaysection .contenedordisplay {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    gap: 3vw;
+}
+
+.displaysection .contenedordisplay .displaytarjeta .tarjetaimg {
+    flex-basis: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.displaysection .contenedordisplay .displaytarjeta .tarjetaimg img {
+    width: 100%;
+	height: auto;
+    max-width: 400px;
+}
+
+@media only screen and (min-width: 750px) {
+    .displaysection .contenedordisplay .displaytarjeta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        text-align: justify;
+    }
+    .displaysection .contenedordisplay .displaytarjeta .tarjetaimg{
+        max-width: 450px;
+		overflow: hidden;
+		max-height: 450px;
+        justify-self: end;
+        padding-right: 5vh;
+    }
+}

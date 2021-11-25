@@ -1,0 +1,202 @@
+.herosection {
+    min-height: 100vh;
+    background: url(../images//ceramica-headv2.jpg) no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    .hero__texto {
+        padding: 10vh;
+        color: white;
+        display: inline-block;
+        overflow: hidden;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            font-size: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+        }
+        
+        p {
+            font-size: 25px;
+            max-width: 600px;
+        }
+    }
+}
+
+p {
+    padding-bottom: 1vh;
+}
+
+.nosotrossection {
+    background-color: #f4f4f4;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    .nosotrosbox {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 3vw;
+
+        .nosotrosimg {
+            flex-basis: 300px;
+            width: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        .nosotrostexto {
+            align-self: center;
+            flex: 1.5;
+            max-width: 450px;
+            min-width: 250px;
+            display: flex;
+            flex-flow: column;
+            gap: 3vw;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.portafolio {
+    background-color: $color_fondo_principal;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    .titlemid {
+        text-align: center;    
+        padding-bottom: 3rem;
+    }
+
+    .contenedortarjeta {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-items: center;
+        justify-content: space-evenly;
+        gap: 3vw;
+
+        .tarjeta {
+            text-align: center;
+
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+
+.proyectos {
+    background-color: rgb(173, 173, 173);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    .titlemid {
+        text-align: center;    
+        padding-bottom: 3rem;
+    }
+
+    .contenedortarjeta {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-items: center;
+        justify-content: space-evenly;
+        grid-gap: 1rem;
+        gap: 3vw;
+
+        .tarjeta {
+            text-align: center;
+
+            h4 {
+                color: $color_blanco
+            }
+
+            p {
+                color: $color_blanco;
+            }
+
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+
+//Mediaquerry
+
+@media only screen and (min-width: 750px) {
+    .nosotrossection .nosotrosbox .nosotrosimg {
+        flex-grow: 1;
+		max-width: 250px;
+		overflow: hidden;
+		max-height: 250px;
+    }
+
+    .nosotrossection .nosotrosbox .nosotrosimg img {
+        width: 100%;
+		height: auto;
+    }
+
+    .nosotrossection .nosotrosbox .nosotrostexto {
+        align-items: center;
+    }
+    .portafolio .contenedortarjeta {
+        display: flex;
+        flex-flow: row;
+    }
+    .proyectos .contenedortarjeta {
+        display: flex;
+        flex-flow: row;
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+    .nosotrossection .nosotrosbox .nosotrosimg {
+        flex-grow: 1;
+		max-width: 250px;
+		overflow: hidden;
+		max-height: 250px;
+    }
+
+    .nosotrossection .nosotrosbox .nosotrosimg img {
+        width: 100%;
+		height: auto;
+    }
+
+    .nosotrossection .nosotrosbox .nosotrostexto {
+        align-items: flex-start;
+        align-content: start;
+    }
+
+    .portafolio .contenedortarjeta {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .proyectos .contenedortarjeta {
+        display: flex;
+        flex-flow: row;
+    }
+}

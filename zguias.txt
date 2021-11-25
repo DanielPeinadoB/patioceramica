@@ -1,0 +1,54 @@
+NODE.js y NPM
+
+Ver la version de node  "node -V"
+Ver la version de npm   "npm -V"
+
+1. Instalar Node.js (Ir a https://nodejs.org/es/download/ descargar la versión para Windows 10)
+2. Instalar NPM (En la consola de comandos o Terminal de Visual Code, ejecutar: npm install npm@latest -g)
+
+REPETIR EN CADA PROYECTO
+
+1.  EJECUTAR NPM        npm init (dar enter y yes)
+2.  Instalar SASS       -g sass
+3.  Instalar NODE       npm install -D node-sass nodemon
+4.  Crear carpeta css y el archivo "estyle.css"
+5.  Crear carpeta scss y el archivo " estyle.ccs"
+6.  Editar el archivo "package.json" agregando:
+
+"build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+7.  GUARDAR EL ARCHIVO
+8.  Ejecutar            npm run watch-css
+PARA CERRAR EL TERMINAL DE SCSS "CTRL+C"
+PARA CORRER DE NUEVO    npm run watch-css
+
+
+
+GIT
+
+Ver la version de GIT           git --version
+Ver los comandos                git
+Agregar todos los archivos      git add .
+Agregar archivo individual      git add NAME
+
+CONFIGURAR GIT POR PRIMERA VEZ
+
+git config --global user.name "Daniel Peinado"
+git config --global user.email "daniel.peinadob@gmail.com"
+
+COMPRAR CONFIGURACION           git config --list
+    Dar tecla abajo hasta END y presionar Q
+
+PARA MODIFICAR USUARIO SOLO SOBREESCRIBIR CON EL MISMO USUARIO
+
+
+**  COMANDO BASICOS                         **
+**  VER EL CONTENIDO DE CARPETA     dir     **
+**  LIMPIAR TERMINAL                clear   **
+**  ENTRAR O SALIR DE CARPETA       cd      **
+
+REPOSITORIO     es la carpeta donde se guarda el proyecto para mas adelante compartirlo con el equipo a traves de un respositorio en la nube.
+
+Ver el estado                   git status
+Ver la ramma                    git branch

@@ -56,4 +56,8 @@ INICIALIZAR
 - Ver el estado                 git status
 - Agregar archivos              git add .
 - Agregar los cambios al REP    git commit -m "explicacion"
-- Ver la ramma                  git branch
+- Agregar rama                  git branch "nameX"
+- Ver la rama                   git branch
+- Cambiar de rama               git checkout "nameX"
+
+** Para hacer cambios crear una nueva rama, hacer las modifiaciones que se desea, si estan aprobadas mergearlas**

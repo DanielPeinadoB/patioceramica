@@ -50,5 +50,9 @@ PARA MODIFICAR USUARIO SOLO SOBREESCRIBIR CON EL MISMO USUARIO
 
 REPOSITORIO     es la carpeta donde se guarda el proyecto para mas adelante compartirlo con el equipo a traves de un respositorio en la nube.
 
-Ver el estado                   git status
-Ver la ramma                    git branch
+INICIALIZAR
+- Crear nuevo REPOSITORIO       git init
+    *Para dar marcha atras...
+- Ver el estado                 git status
+- Agregar archivos              git add .
+- Ver la ramma                  git branch

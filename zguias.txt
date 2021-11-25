@@ -55,4 +55,5 @@ INICIALIZAR
     *Para dar marcha atras...
 - Ver el estado                 git status
 - Agregar archivos              git add .
+- Agregar los cambios al REP    git commit -m "explicacion"
 - Ver la ramma                  git branch

@@ -59,5 +59,7 @@ INICIALIZAR
 - Agregar rama                  git branch "nameX"
 - Ver la rama                   git branch
 - Cambiar de rama               git checkout "nameX"
+- Listar commits                git log --oneline
+- git merge                     git merge "nombre_rama"
 
 ** Para hacer cambios crear una nueva rama, hacer las modifiaciones que se desea, si estan aprobadas mergearlas**

@@ -256,7 +256,7 @@ header {
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
   justify-content: space-evenly;
-  padding-top: 2vh;
+  padding-top: 5vh;
   padding-bottom: 2vh;
   background-color: whitesmoke; }
   .herofooter form input[type=text], .herofooter form select, .herofooter form textarea {
@@ -355,10 +355,11 @@ header {
 
 .displaysection .titlemid {
   text-align: center;
-  padding-bottom: 2rem; }
+  padding-bottom: 5rem; 
+  font-size: 40px;}
 
 .displaysection .contenedordisplay {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -374,20 +375,31 @@ header {
 .displaysection .contenedordisplay .displaytarjeta .tarjetaimg img {
   width: 100%;
   height: auto;
-  max-width: 400px; }
+  max-width: 200px; }
 
 @media only screen and (min-width: 750px) {
   .displaysection .contenedordisplay .displaytarjeta {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr;
+    padding-right: 10vh;
     text-align: justify; }
   .displaysection .contenedordisplay .displaytarjeta .tarjetaimg {
     max-width: 450px;
     overflow: hidden;
     max-height: 450px;
     justify-self: end;
-    padding-right: 5vh; } }
+    text-align: center;
+    padding-right: 1vh; } 
+  .displaysection .contenedordisplay .displaytarjeta .tarjetaimg img {
+    width: 50%; }}
+
+@media only screen and (min-width: 1024px) {
+  .displaysection .contenedordisplay .displaytarjeta .tarjetaprodtexto {
+    font-size: 25px; 
+    text-align: center;}
+  .displaysection .contenedordisplay .displaytarjeta .tarjetaprodtexto h4 {
+    padding-bottom: 2rem; }}
 
 .tracking-in-contract-bck-bottom {
   -webkit-animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
